@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Football Match Prediction</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles.css') }}" />
+		<link rel="icon" href="{{ url_for('static',filename='images/ball1.png') }}" />
+  </head>
+  <body>
+    <div class="overlay_personalization">
+      <span class="overlay_container" id="o_c">
+        <form method="POST">
+        <h1 class="overlay_element">Football Match Prediction !!</h1>
+        <div class="left">
+          <label class="feature1" for="feature1">Team 1</label>
+          <select name="feature1">
+            <option value="FC_Berlin">FC Berlin</option>
+            <option value="SV_Frankfurt">SV Frankfurt</option>
+            <option value="FC_Stuttgart">FC Stuttgart</option>
+            <option value="FC_Cologne">FC Cologne</option>
+            <option value="FC_Nuremberg">FC Nuremberg</option>
+            <option value="SV_Leipzig">SV Leipzig</option>
+            <option value="FC_Munich">FC Munich</option>
+            <option value="SV_Wuppertal">SV Wuppertal</option>
+            <option value="FC_Wuppertal">FC Wuppertal</option>
+            <option value="SV_Essen">SV Essen</option>
+            <option value="SV_Bremen">SV Bremen</option>
+            <option value="FC_Dresden">FC Dresden</option>
+            <option value="SV_Hannover">SV Hannover</option>
+            <option value="FC_Bielefeld">FC Bielefeld</option>
+            <option value="FC_Hamburg">FC Hamburg</option>
+            <option value="FC_Essen">FC Essen</option>
+            <option value="FC_Dortmund">FC Dortmund</option>
+            <option value="FC_Aachen">FC Aachen</option>
+          </select><br><br>
+          <h3>{{team1}}:</h3>
+          <table>
+            <tr>
+              <th>Year</th>
+              <th>Goals</th>
+              <th>Fans</th>
+            </tr>
+            {% for row in rows1 %}
+            <tr>
+              <td>{{ row.year_founded }}</td>
+              <td>{{ row.num_goals }}</td>
+              <td>{{ row.fan_club_members }}</td>
+            </tr>
+            {% endfor %}
+          </table>
+        </div>
+        <div class="right">
+          <label class="feature2" for="feature2">Team 2</label>
+          <select name="feature2">
+            <option value="FC_Berlin">FC Berlin</option>
+            <option value="SV_Frankfurt">SV Frankfurt</option>
+            <option value="FC_Stuttgart">FC Stuttgart</option>
+            <option value="FC_Cologne">FC Cologne</option>
+            <option value="FC_Nuremberg">FC Nuremberg</option>
+            <option value="SV_Leipzig">SV Leipzig</option>
+            <option value="FC_Munich">FC Munich</option>
+            <option value="SV_Wuppertal">SV Wuppertal</option>
+            <option value="FC_Wuppertal">FC Wuppertal</option>
+            <option value="SV_Essen">SV Essen</option>
+            <option value="SV_Bremen">SV Bremen</option>
+            <option value="FC_Dresden">FC Dresden</option>
+            <option value="SV_Hannover">SV Hannover</option>
+            <option value="FC_Bielefeld">FC Bielefeld</option>
+            <option value="FC_Hamburg">FC Hamburg</option>
+            <option value="FC_Essen">FC Essen</option>
+            <option value="FC_Dortmund">FC Dortmund</option>
+            <option value="FC_Aachen">FC Aachen</option>
+          </select><br><br>
+          <h3>{{team2}}:</h3>
+          <table>
+            <tr>
+              <th>Year</th>
+              <th>Goals</th>
+              <th>Fans</th>
+            </tr>
+            {% for row in rows2 %}
+            <tr>
+              <td>{{ row.year_founded }}</td>
+              <td>{{ row.num_goals }}</td>
+              <td>{{ row.fan_club_members }}</td>
+            </tr>
+            {% endfor %}
+          </table>
+        </div>
+        <div class="vs">
+          <h2>{{team1}} Vs {{team2}}</h2>
+        </div>
+        <div class="center">
+          <label for="feature3">T1 Location:</label>
+          <input type="radio" value="Home" name="feature3" id="Home" checked>
+          <label for="Home">Home</label>
+          <input type="radio" value="Away" name="feature3" id="Home" checked>
+          <label for="Away">Away</label>
+          <br><br>
+        </div>
+        <!-- <div class="center">
+          <label for="feature4">Fans Number Added:</label>
+          <input type="number" name="feature4"><br><br>
+        </div> -->
+        <div class="vs">
+          <input type="submit" value="Predict">
+        </div>
+        </form>
+        <div class="center">
+          {% if prediction %}
+          <h1 >{{team1}}: {{ prediction }}</h1>
+          {% endif %}
+        </div>
+      </span>
+
+    </div>
+
+    <!--
+    <h1>Football Match Prediction !!</h1>
+    <form method="POST">
+      <label for="feature1">Team 1:</label>
+      <input type="text" name="feature1"><br><br>
+      <label for="feature2">Team 2:</label>
+      <input type="text" name="feature2"><br><br>
+      <label for="feature3">T1 Location:</label>
+      <input type="text" name="feature3"><br><br>
+      <label for="feature4">Fans Number Added:</label>
+      <input type="number" name="feature4"><br><br>
+      <input type="submit" value="Predict">
+    </form>
+    {% if prediction %}
+      <h2>Team 1: {{ prediction }}</h2>
+    {% endif %}
+  -->
+  </body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "adaptive-supply-chain",
+  "private_key_id": "d1c118f643364b7620dd72ea5c4ecaade2e6cffc",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQClh1yptEFWT1tJ\nXlF6O8QkdZAnm0fouLcnM9PCj/gxpiQXMmgDnkWPAgaTdPSICChYMPbc4vELHQOF\n0Fl9sl/tWLuIqrJ9Em9YySaZJUroCk6TqTiM+uiG/tPZIWrPIpFh+QGzrlZQcs9s\n0yC/QjzU3TUglhV19Dhwd2QVE2jdEicTKpsJfdusoWYJMracD1PRnaezx+Vbkguw\nU6ayeEfjv8yhSxR7GSYJQsZ1uWAyH/2P8l4GtRDcTxRZ745Z0RDSnDZvKm/HVia8\ndlZfBH3l5AUibYoyN791p5yInAsvP7qrWWj04MWLSEKLXsC9gq77lb0t5xLmUPHz\n6DTggtKpAgMBAAECggEADO5c7Q39n7A93aauX0ntefqsKwfsr2/EsR2RoKyuEzTb\nM2u25/d0kCY0nM7hboISoscademNspRO6uR6pUDq0QgiSFwrau1mgO1f5E1fQ27Q\nsiThW9QbF7avFpKPfUSCToDNIvwO1qSNcz8wGvjh9zAbvyKyZP9R7GlLSoE0azao\nVLF8k6rw1y62Ex8TWyngFMurLPpxGa1v737LDsR6mDeJGbnZCrZgLLJZZ8zntrm1\nNYpBE+LQK2cqkkhXU54vR07KwqnerEF5jFIRbPlYjReHny2ZqFmV94gsql2l5Vcw\neykoWW7+8uqT73Q0/QH0Lf/+zDnnR9iNx7VXIzQ9gQKBgQDcq7vDTai1XazXY3tB\nU1qQtSYaLgHivedOngTcDU9RTarsmwkZnSQJDPeiKz1879VYaDLJy8OirkDD6Xgh\nobv8X2amQ/DVxJgpVCrYDlwkdMBFk462AQr32X4epER2RdQgv51HhIKsXZQmEIp5\n+dKH+IMOJySfGZySoYiEzAuGQQKBgQDAB5zIDNxWSscKyWkuMY5Pfzv9JUmzQYxO\nccnbgWTZGZtA11IOCjnsF45gn7j6PbUw7LjpCjVrHnNroXX05xvsQs2nmOLn0ht9\n4uuJ9qol8Uq26Oa2ZKPoPkNO4z0noczQnlYwCPuWQGQAk6xdZ5++AloI6D9+4A0i\nBKbGJCxCaQKBgCsZX5LFmC3UHe3zgB9CKG4a81YppjSi4op4UnqoHtXCVZ/gp+ZY\nyrD512PVDi1YqlKaB1FietNLNVsOPmhTLmQcPfA7VM5rl0x7I+MO6vAz3Vm5eCYU\nDhBaakeRzc1L1iKPSiituNfxbv4APQuVv4jPAMnC22Q3nF0HL6LAN4ABAoGAeuTk\nS4sfgAI/PAIGVE/Wub290JaKgjQS7SkZfGdk+SPQHkEu/FlDFHtG3UObCFtxmCwH\ncuzbnwBP8bPVX7SAREXEg9vua1olyfztrM+1uK6hmEmZTWU/GKSwQs5fFvwPrfuH\nQRqemFwBI/VePDDTJLEwmb641CPjg7/iU7BWuvECgYAfOSRMM3QDldTanEKJ3u0m\n5PdnW82rSPknR/Vc1WreSkyaOOT+eaIgiheVWquT9cb2zrttA0TBRiW1WXe1uh+S\n45PlZARP3t+GJrleH0EhRcmIo2DdXpgIs1a1PHI4gAlaNOVcb85k+mlPOGlMuHrW\nB4tFRxFDFNWlYrVEdoPL+g==\n-----END PRIVATE KEY-----\n",
+  "client_email": "bigqueryaccess@adaptive-supply-chain.iam.gserviceaccount.com",
+  "client_id": "113909216577672285956",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/bigqueryaccess%40adaptive-supply-chain.iam.gserviceaccount.com"
+}
