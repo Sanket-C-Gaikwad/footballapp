@@ -9,7 +9,7 @@ credentials = service_account.Credentials.from_service_account_file('bigqueryacc
 client = bigquery.Client(credentials=credentials, project='adaptive-supply-chain')
 
 # Define BigQuery ML model
-model_name = 'Trained_Model3'
+model_name = 'Trained_Model2'
 model_id = 'adaptive-supply-chain.football_games.' + model_name
 
 # Define API endpoint for predictions

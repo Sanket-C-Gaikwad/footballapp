@@ -10,7 +10,7 @@
     <div class="overlay_personalization">
       <span class="overlay_container" id="o_c">
         <form method="POST">
-        <h1 class="overlay_element">Football Match Prediction !!</h1>
+        <h1 class="overlay_element">Football Match Prediction !!</h1><br><br>
         <div class="left">
           <label class="feature1" for="feature1">Team 1</label>
           <select name="feature1">
@@ -34,9 +34,9 @@
             <option value="FC_Aachen">FC Aachen</option>
           </select><br><br>
           <h3>{{team1}}:</h3>
-          <table>
+          <table cellpadding="5" cellspacing="1" border="1">
             <tr>
-              <th>Year</th>
+              <th>Est. Year</th>
               <th>Goals</th>
               <th>Fans</th>
             </tr>
@@ -72,9 +72,9 @@
             <option value="FC_Aachen">FC Aachen</option>
           </select><br><br>
           <h3>{{team2}}:</h3>
-          <table>
+          <table cellpadding="5" cellspacing="1" border="1">
             <tr>
-              <th>Year</th>
+              <th>Est. Year</th>
               <th>Goals</th>
               <th>Fans</th>
             </tr>
@@ -103,13 +103,37 @@
           <input type="number" name="feature4"><br><br>
         </div> -->
         <div class="vs">
-          <input type="submit" value="Predict">
+          <input type="submit" value="Predict"><br><br>
         </div>
         </form>
         <div class="center">
           {% if prediction %}
           <h1 >{{team1}}: {{ prediction }}</h1>
           {% endif %}
+        </div><br><br>
+        <div>
+          <h3>Season 2021 - 2022</h3>
+          <table cellpadding="5" cellspacing="1" border="1">
+            <tr><th>Teams</th><th>Matches</th><th>W</th><th>D</th><th>L</th><th>Points</th></th>
+            <tr><td>FC_Berlin</td><td>34</td><td>31</td><td>1</td><td>2</td><td>94</td></tr>
+            <tr><td>SV_Frankfurt</td><td>34</td><td>21</td><td>9</td><td>4</td><td>72</td></tr>
+            <tr><td>SV_Leipzig</td><td>34</td><td>20</td><td>9</td><td>5</td><td>69</td></tr>
+            <tr><td>FC_Stuttgart</td><td>34</td><td>19</td><td>11</td><td>4</td><td>68</td></tr>
+            <tr><td>FC_Bielefeld</td><td>34</td><td>19</td><td>10</td><td>5</td><td>67</td></tr>
+            <tr><td>FC_Hamburg</td><td>34</td><td>18</td><td>11</td><td>5</td><td>65</td></tr>
+            <tr><td>FC_Aachen</td><td>34</td><td>18</td><td>9</td><td>7</td><td>63</td></tr>
+            <tr><td>FC_Munich</td><td>34</td><td>17</td><td>11</td><td>6</td><td>62</td></tr>
+            <tr><td>FC_Dresden</td><td>34</td><td>16</td><td>12</td><td>6</td><td>60</td></tr>
+            <tr><td>FC_Essen</td><td>34</td><td>16</td><td>9</td><td>9</td><td>57</td></tr>
+            <tr><td>FC_Wuppertal</td><td>34</td><td>15</td><td>11</td><td>8</td><td>56</td></tr>
+            <tr><td>SV_Bremen</td><td>34</td><td>14</td><td>12</td><td>8</td><td>54</td></tr>
+            <tr><td>FC_Dortmund</td><td>34</td><td>15</td><td>8</td><td>11</td><td>53</td></tr>
+            <tr><td>SV_Wuppertal</td><td>34</td><td>14</td><td>10</td><td>10</td><td>52</td></tr>
+            <tr><td>FC_Nuremberg</td><td>34</td><td>14</td><td>10</td><td>10</td><td>52</td></tr>
+            <tr><td>SV_Hannover</td><td>34</td><td>13</td><td>13</td><td>8</td><td>52</td></tr>
+            <tr><td>SV_Essen</td><td>34</td><td>12</td><td>12</td><td>10</td><td>48</td></tr>
+            <tr><td>FC_Cologne</td><td>34</td><td>11</td><td>11</td><td>12</td><td>44</td></tr>
+            </table>
         </div>
       </span>
 
